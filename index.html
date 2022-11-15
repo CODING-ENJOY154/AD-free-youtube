@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Video Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">MiniTube</h1>
+    <div class="search-bar">
+      <input type="text" id="search-bar" placeholder="Search YouTube videos..." />
+      <select id="duration-filter">
+        <option value="">Any Duration</option>
+        <option value="short">Short (&lt;4 mins)</option>
+        <option value="long">Long (&gt;20 mins)</option>
+      </select>
+      <button id="search-btn">
+        🔍
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div id="videos-container"></div>
+    <button id="load-more-btn" style="display: none;">Load More</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
